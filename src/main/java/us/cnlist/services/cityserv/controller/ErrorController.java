@@ -9,7 +9,7 @@ import us.cnlist.services.cityserv.entity.error.ErrorMessage;
 import us.cnlist.services.cityserv.error.BadRequestError;
 import us.cnlist.services.cityserv.error.ObjectDoesNotExist;
 
-@Controller
+
 public class ErrorController {
 
     @ExceptionHandler(ObjectDoesNotExist.class)

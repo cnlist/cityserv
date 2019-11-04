@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
 
 @Controller
 @RequestMapping("/search/city")
-public class CityController {
+public class CityController extends ErrorController {
 
     @Autowired
     private GeoService geoService;
