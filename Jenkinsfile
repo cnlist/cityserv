@@ -19,7 +19,7 @@ pipeline {
         stage('Deploy'){
             steps{
                 script{
-                   sh  'curl -T "target/*.war" "http://jenkins:jenkins@192.168.10.5:8012/manager/text/deploy?path=/cityserv&update=true"'
+                    sh  'curl -T "target/cityserv-0.0.1-SNAPSHOT.war" "http://jenkins:jenkins@192.168.10.5:8012/manager/text/deploy?path=/cityserv&update=true"'
                 }
             }
         }
