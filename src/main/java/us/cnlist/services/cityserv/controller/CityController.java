@@ -36,6 +36,7 @@ public class CityController {
         return foundCities.stream().map(city -> {
             CitySearchResponse response = new CitySearchResponse();
             response.setCityId(city.getId());
+            response.setCityName(city.getName());
             response.setRegionName(city.getRegion().getName());
             response.setCountryName(city.getRegion().getCountry().getName());
             return response;
